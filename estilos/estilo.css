@@ -1,7 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
-
+    
 }
 
 
@@ -12,17 +12,19 @@ html{
     width: 100%;
     background-image: linear-gradientlinear-gradient (90deg, rgba(255,255,255,0.6982143199076505) 0%, rgba(234,245,255,0.23042720506171221) 0%, rgba(205,231,255,0.5861695019804797) 100%);
     background-attachment: fixed;
+    
 }      
 
 
 .body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 130px auto auto auto 305px;
+    grid-template-rows: 120px auto auto auto auto auto;
     grid-template-areas:"header header header"
                         "main main main "
                         "seccion seccion seccion"
                         "article article article"
+                        "section section section"
                         "pie pie pie";
     grid-gap: 1rem;
     animation: fadein 2s; 
@@ -44,13 +46,13 @@ html{
 .header {
     grid-area: header;
     grid-column: 1/ 4; 
-    background-color: rgba(1, 135, 245, 0.659) 80%;
+    background-color: rgba(31, 31, 31, 0.659) 80%;
     width: 100%;
     padding: 10px;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
-    background-color: rgba(8, 130, 230, 0.348);
+    background-color: rgba(70, 70, 71, 0.348);
     overflow:hidden;
 
 }
@@ -71,7 +73,7 @@ html{
       -webkit-transition:all 100ms ease;
       -o-transition:all 800ms ease;
       transition:all 800ms ease;
-      background-color:#075fe35f;
+      background-color:#ffffff5f;
       border-radius:2px
       
   }
@@ -143,15 +145,15 @@ html{
     text-transform: uppercase;
     display: block;
     font-size: 75px;
-    color: hsla(0, 62%, 52%, 0.648);
-    text-shadow: 0 8px 9px #9da0c4, 0px -2px 1px rgb(142, 87, 87);
+    color: hsla(209, 100%, 63%, 0.902);
+    text-shadow: 0 8px 9px #989898, 0px -2px 1px rgb(136, 174, 232);
     font-weight: bold;
     letter-spacing: -4px;
     text-align: center;
-    background: linear-gradient( bottom, rgb(165, 203, 255) 0%,#d5d1e9 100%);
+    background: linear-gradient( bottom, rgb(16, 160, 249) 0%,#6aa8f9 100%);
     position: absolute;
     padding: 100px 200px;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 20px;
@@ -161,11 +163,14 @@ html{
     display: block;
     font-size: 20px;
     position: absolute;
+    text-align: center;
     width: 100%;
-    margin-top: 300px;
-    margin-left: 250px;
+    top: 60%;
+    margin-left: 0 px;
     text-size-adjust: 20px;
-    text-transform: capitalize;
+    text-transform: none;
+    color: #333;
+    
 }
 
 
@@ -285,6 +290,7 @@ html{
     width: 90%;
     height: 50px;
     margin-top: 15px;
+    margin-left: 300px;
     text-align: justify;
     color: hsla(0, 62%, 52%, 0.648);
     font-weight: bold;
@@ -299,6 +305,7 @@ html{
 .seccion__parrafo{
     position: relative;
     width: 90%;
+    margin-left: 300px;
     height: 50px;
     margin-top: 12px;
     text-align: justify;
@@ -332,6 +339,7 @@ article{
     font-size: 50px;
     text-align: center;
     color: hsla(0, 62%, 52%, 0.648);
+    text-shadow: 0 5px 6px #9898987c, 0px -2px 1px rgba(236, 14, 14, 0.45);
     font-weight: bold;
     letter-spacing: -4px;
     background: linear-gradient( bottom, rgb(165, 203, 255) 0%,#d5d1e9 100%);
@@ -406,6 +414,127 @@ article{
     text-decoration: none;
     color: #ffffff;
 }
+
+
+
+/*empieza section testimonio */
+
+.sectiontestimonios{
+        margin-left: 410px;
+}
+
+h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	margin: 25px 0 50px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #b50000;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.carousel {
+	width: 650px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+    margin-top: 20px;
+}
+.carousel .item {
+	color: rgb(54, 53, 53);
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 340px;
+}
+.carousel .item a {
+	color: rgb(54, 53, 53);
+}
+.carousel .img-box {
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {	
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	text-align: center;
+	padding-bottom: 5px;
+}
+.carousel .overview b {
+	color: rgb(208, 8, 8);
+	font-size: 15px;
+	text-transform: uppercase;
+	display: block;	
+	padding-bottom: 5px;
+}
+.carousel .star-rating i {
+	font-size: 18px;
+	color: #ffdc12;
+}
+
+
+.carousel .carousel-control {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    background: rgb(46, 46, 46);
+    text-shadow: none;
+	top: 4px;
+}
+.carousel-control i {
+	font-size: 20px;
+	margin-right: 2px;
+}
+.carousel-control.left {
+	left: auto;
+	right: 40px;
+}
+.carousel-control.right i {
+	margin-right: -2px;
+}
+.carousel .carousel-indicators {
+	bottom: 15px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #ff0000;
+	border-color: transparent;
+}
+.carousel-indicators li.active {
+	border: none;
+	background: rgb(52, 52, 52);		
+}
+
+
+/*termina section testimonio */
+
+
+
+
+
+
 
 
 
@@ -503,6 +632,7 @@ article{
 }
 
 .piefooter{
+    margin-top: 10px;
     width: 100%;
     background: rgb(35, 35, 35);
     display: flex;
@@ -517,6 +647,19 @@ article{
 /*termina footer nuevo*/
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -704,18 +847,7 @@ article{
     margin-bottom:50px;
     box-shadow: 0px 2px 5px #ddd
    }
-   
- @media screen and (min-width: 480px) and (max-width: 780px)  {
-    .preciocombustible {
-    width:32%;
-    float:left;
-    margin-right:2%
-    }
-    
-    .preciocombustible:last-child {
-    margin-right:0
-    }
-   }
+
    
    /*CABECERA*/
    
@@ -804,10 +936,45 @@ article{
     text-size-adjust: 30px;
     text-decoration: double;
     text-align: center;
+    text-size-adjust: 10px;
    }
+
    .importanteaviso h1{
     text-align: center;
+    text-size-adjust: 20px;
+    overflow: hidden;
 }
+
+
+/* empieza pag quienes somos */
+
+.generalqs {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  
+    
+}
+
+.text-center {
+    font-size: 35px;
+    margin-left: 120px;
+}
+
+.aboutus-more {
+    border: 1px solid #fd0101;
+    border-radius: 25px;
+    color: #fd2701;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+
+/*termina pag quienes somos*/
+
+
 
 
 /* footer nuevo*/
@@ -821,7 +988,7 @@ article{
 .contenedorcolumnas{
     width: 100%;
     max-width: 1200px;
-    margin-left: 20px;
+    margin-left: 30px;
 
 }
 
@@ -843,7 +1010,7 @@ article{
 }
 
 .columna1 p{
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 20px;
     color: #ddd;
 }
@@ -855,7 +1022,7 @@ article{
 }
 
 .columna2 h1{
-    font-size: 22px;
+    font-size: 20px;
     color: #ddd;
 }
 
@@ -865,8 +1032,8 @@ article{
 }
 
 .contenedorcolumnas img{
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
     margin-top: 20px;
 }
 
@@ -881,7 +1048,7 @@ article{
 
 }
 .columna3 h1{
-    font-size: 22px;
+    font-size: 20px;
     color: #ddd;
     display: flex;
 }
@@ -903,7 +1070,7 @@ article{
     background: rgb(35, 35, 35);
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
 }
 
 .Copyrigth{
@@ -993,121 +1160,58 @@ textarea {
 /*comienza MEDIA */
 
 @media screen and (min-width: 780px) and (max-width: 1024px) {
-    .header {
-        width: 100%;
-    }
-    .logo{
-        position: flex;
-        width: 70px;
-    }
-    .navegacion{
-        margin-left: 70px;
-    }
-    .main, .article {
-        width: 100%
 
+    
+.preciocombustible {
+    width:32%;
+    float:left;
+    margin-right:2%
     }
+    
+.preciocombustible:last-child {
+    margin-right:0
+    }
+   }
+   .body{
+    font-size:80%;
 
-    .imagenmain__textoenergia__h1{
-        position: flex;
-        font-size: 50px;
-    }
-
-    .imagenmain__textoenergia__p{
-        position: flex;
-        font-size: 15px;
-        margin-left: 130px;
-    }
-
-    .pie{
-        width: 100%;
-        height: 400px;
-    }
 }
 
+  
 
-@media screen and (min-width: 480px) and (max-width: 780px) {
+   
+@media screen and (min-width: 480px) and (max-width: 780px)  {
     
-    .body{
-        font-size: 12px;
-
-    }
-
-    .header {
-        width: 100%;
-          
-    }
-    
-    .logo{
-        position: flex;
-        width: 70px;
-    }
-    .navegacion{
-        margin-left: 70px;
+ 
+    .preciocombustible {
+    width:32%;
+    float:left;
+    margin-right:2%
     }
     
-    .main, .article {
-        position: flex;
-        width: 100%
+    .preciocombustible:last-child {
+    margin-right:0
     }
-
-    .imagenmain__textoenergia__h1{
-        position: flex;
-        font-size: 40px;
+   
+   .body{
+    font-size:70%;
     }
-
-    .imagenmain__textoenergia__p{
-        position: flex;
-        font-size: 15px;
-        margin-left: 70px;
-    }
-
-
-    .pie{
-        width: 100%;
-        height: 455px;
-    }
-    
 }
-
+   
 
 @media screen and (max-width: 480px){
 
+.preciocombustible {
+    width:32%;
+    float:left;
+    margin-right:2%
+    }
+    
+.preciocombustible:last-child {
+    margin-right:0
+    }
+   
     .body{
-        text-size-adjust: 10px;
-        }
-
-    .header {   
-        width: 80%;
- 
+    font-size:60%;
     }
-    .logo{
-        position: flex;
-        width: 70px;;
-    }
-
-    .navegacion{
-        margin-left: 70px;
-    }
-
-    .main, .article {
-        position: flex;
-        width: 100%
-    }
-    .imagenmain__textoenergia__h1{
-        position: flex;
-        font-size: 30px;
-    }
-
-    .imagenmain__textoenergia__p{
-        position: flex;
-        font-size: 10px;
-        margin-left: 0px;
-    }
-
-    .pie{
-        width: 100%;
-        height: 400px;
-    }
-
 }

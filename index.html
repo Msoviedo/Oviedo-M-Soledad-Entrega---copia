@@ -7,6 +7,10 @@
     <title>Primefuel</title>
     <link rel="stylesheet" href="estilos/Estilo.css">
     <link rel="shortcut icon" href="imagenes/fuel icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -44,7 +48,7 @@
             <img class="imagenmain__1" src="imagenes/Sin título-2.png" alt="Fueldelivery" width="45%" height="350px"; class="responsive">
             <div class="imagenmain__textoenergia"> 
                 <h1 class="imagenmain__textoenergia__h1"> Energía garantizada</h1>
-                <p class="imagenmain__textoenergia__p">Párrafo corto a modo intorucción</p>
+                <p class="imagenmain__textoenergia__p">Soluciones de abastecimiento de energía independientes de la energía para mantener su negocio en funcionamiento</p>
         
             </div>
                    
@@ -74,10 +78,11 @@
     <section class="seccion" >
             <img class="seccion__imagen" src="imagenes/Sin título-1.png" alt="imagenfuel" width="30%" height="60%">
             <h1 class="seccion__titulo">Somos la mejor opcion para tu coche</h1>
-            <p class="seccion__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro beatae quas assumenda illo veritatis dolores ipsam quia. Rem molestias in dolore omnis, placeat animi veritatis quaerat dicta consequuntur illum.</p>
+            <p class="seccion__parrafo">Ayudando a sus flotas y clientes a mantenerse alimentados con la energía que impulsa su negocio.</p>
             
     </section>
 
+  
     <article class="article">
             <h1 class="nuestroprocedimiento">Nuestro procedimiento</h1>
 
@@ -99,15 +104,83 @@
                     <a class="bloque3__titulo" href="planificaciondevisita.html">Planificacion de visita</a>
 
                 </div>    
-                
-                                  
-            </div>
-        
+             </div>
     </article>
 
-    <br>
+    <section class="sectiontestimonios">
 
-    <footer class="pie">
+        <h2>Testimonios</h2>
+        <div id="micarrusel" class="carousel slide" data-ride="carousel">
+
+
+        <!-- emprezamos carrusel indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#micarrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#micarrusel" data-slide-to="1"></li>
+            <li data-target="#micarrusel" data-slide-to="2"></li>
+        </ol>   
+
+            <div class="carousel-inner">		
+                <div class="item active">
+                    <div class="img-box"><img src="imagenes/autor-11-foto-2.jpeg" alt=""></div>
+                    <p class="testimonio">Servicio excelente, atención rápida y efectiva.</p>
+                    <p class="overview"><b>Jonas Martinez</b>Empresario <a href="Empresario">Inmobiliaria M.</a></p>
+                    <div class="star-rating">
+
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="img-box"><img src="imagenes/fotos-de-perfil-son-mejor-elegidas-por-personas-extranas-afirma-estudio.jpg" alt=""></div>
+                    <p class="tertimonio">Me salvaron cuando lo necesite, gracias</p>
+                    <p class="overview"><b>Marta Gonzalez</b>Ama de casa <a href="Amadecasa">Casa</a></p>
+                    <div class="star-rating">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="item">
+                    <div class="img-box"><img src="imagenes/perfil-resilencia.jpg" alt=""></div>
+                    <p class="testimonial">Quede impactada con el servicio, recomendable</p>
+                    <p class="overview"><b>Pilar Perez</b>Gerente Vodafone <a href="Comercial">Comercial</a></p>
+                    <div class="star-rating">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        </ul>
+                    </div>
+                </div>		
+            </div>
+
+            <!-- iconos control  -->
+            <a class="carousel-control left" href="#micarrusel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control right" href="#micarrusel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </div>
+    </section>
+
+      <footer class="pie">
 
         <div class="contenedorall">
 

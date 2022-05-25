@@ -7,7 +7,7 @@
 
 html{
     font-family: "Allerta ", "Crimson Text", "Ginebra";
-    font-size: 16px;
+    font-size: 14px;
     height: 100vh;
     width: 100%;
     background-image: linear-gradientlinear-gradient (90deg, rgba(255,255,255,0.6982143199076505) 0%, rgba(234,245,255,0.23042720506171221) 0%, rgba(205,231,255,0.5861695019804797) 100%);
@@ -28,7 +28,8 @@ html{
                         "pie pie pie";
     grid-gap: 1rem;
     animation: fadein 2s; 
-}
+    font-size: 14px;
+}   
 
 @keyframes fadein {
     0% {
@@ -131,12 +132,10 @@ html{
 }
 
 .imagenmain__textoenergia{
-    position: absolute;
-    top: 20%;
+    position: relative;
+    margin-top: -200px;
     left: 40%;
     width: 50%;
-    height: 50%;
-    opacity: 100%;
     text-transform: uppercase;
     color: hsla(212, 100%, 59%, 0.806);
 }
@@ -144,16 +143,15 @@ html{
 .imagenmain__textoenergia__h1{
     text-transform: uppercase;
     display: block;
-    font-size: 75px;
+    font-size: 65px;
     color: hsla(209, 100%, 63%, 0.902);
     text-shadow: 0 8px 9px #989898, 0px -2px 1px rgb(136, 174, 232);
     font-weight: bold;
     letter-spacing: -4px;
-    text-align: center;
     background: linear-gradient( bottom, rgb(16, 160, 249) 0%,#6aa8f9 100%);
-    position: absolute;
-    padding: 100px 200px;
+    position: relative;
     top: 30%;
+    text-align: center;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 20px;
@@ -161,17 +159,19 @@ html{
 .imagenmain__textoenergia__p{
     text-transform: uppercase;
     display: block;
-    font-size: 20px;
-    position: absolute;
+    font-size: 15px;
+    position: relative;
     text-align: center;
     width: 100%;
-    top: 60%;
-    margin-left: 0 px;
-    text-size-adjust: 20px;
+    margin-top: auto;
     text-transform: none;
     color: #333;
-    
-}
+}  
+
+
+
+
+
 
 
 
@@ -420,7 +420,8 @@ article{
 /*empieza section testimonio */
 
 .sectiontestimonios{
-        margin-left: 410px;
+    margin-left: 410px;
+    font-family: "Allerta ", "Crimson Text", "Ginebra";
 }
 
 h2 {
@@ -471,7 +472,7 @@ h2::after {
 	border-radius: 50%;
 }
 .carousel .testimonial {	
-	padding: 30px 0 10px;
+	padding: 20px 0 10px;
 }
 .carousel .overview {	
 	text-align: center;
@@ -482,11 +483,11 @@ h2::after {
 	font-size: 15px;
 	text-transform: uppercase;
 	display: block;	
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 .carousel .star-rating i {
 	font-size: 18px;
-	color: #ffdc12;
+	color: rgb(213, 183, 12);
 }
 
 
@@ -494,7 +495,7 @@ h2::after {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-    background: rgb(46, 46, 46);
+    background: rgba(46, 46, 46, 0.813);
     text-shadow: none;
 	top: 4px;
 }
@@ -519,7 +520,7 @@ h2::after {
 	border-radius: 50%;
 }
 .carousel-indicators li {	
-	background: #ff0000;
+	background: rgb(255, 0, 0);
 	border-color: transparent;
 }
 .carousel-indicators li.active {
@@ -1157,61 +1158,4 @@ textarea {
 
 
 
-/*comienza MEDIA */
-
-@media screen and (min-width: 780px) and (max-width: 1024px) {
-
-    
-.preciocombustible {
-    width:32%;
-    float:left;
-    margin-right:2%
-    }
-    
-.preciocombustible:last-child {
-    margin-right:0
-    }
-   }
-   .body{
-    font-size:80%;
-
-}
-
-  
-
-   
-@media screen and (min-width: 480px) and (max-width: 780px)  {
-    
- 
-    .preciocombustible {
-    width:32%;
-    float:left;
-    margin-right:2%
-    }
-    
-    .preciocombustible:last-child {
-    margin-right:0
-    }
-   
-   .body{
-    font-size:70%;
-    }
-}
-   
-
-@media screen and (max-width: 480px){
-
-.preciocombustible {
-    width:32%;
-    float:left;
-    margin-right:2%
-    }
-    
-.preciocombustible:last-child {
-    margin-right:0
-    }
-   
-    .body{
-    font-size:60%;
-    }
-}
+/*TRABJAR LAS MEDIA Web Responsive*/
